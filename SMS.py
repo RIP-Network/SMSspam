@@ -2,6 +2,7 @@
 
 import sys, os, webbrowser, platform, subprocess, time
 from colorama import Fore
+from importlib_metadata import version
 
 
 banner = Fore.RED + """…………..$……………………………………..$…………..
@@ -35,7 +36,7 @@ banner = Fore.RED + """…………..$……………………………………
 
 print(banner)
 print(Fore.GREEN + "              RIP-Network")
-print("                 V1.0")
+print("                 V2.0")
 time.sleep(3)
 os.system('clear')
 
@@ -44,7 +45,9 @@ def menu():
     while True:
      print(Fore.GREEN + "Opciones\n")
      print("1) Spam-SMS")
-     print("2) Comunicarte conmigo")
+     print("2) Instalar requisitos")
+     print("3) Version ")
+     print("4) Comunicarte conmigo")
      print("99)Salir")
 
      d = input(Fore.LIGHTBLUE_EX + "Elige una opcion --> ")
@@ -60,20 +63,26 @@ def menu():
         time.sleep(2)
         webbrowser.open('https://twitter.com/i/flow/password_reset?input_flow_data=%7B%22requested_variant%22%3A%22eyJwbGF0Zm9ybSI6IlJ3ZWIifQ%3D%3D%22%7D')
         time.sleep(2)
+        webbrowser.open('https://mail.yandex.com/')
+        time.sleep(2)
+        webbrowser.open('https://web.telegram.org/k/')
 
 
+     if d == "2":
+        print("Vuelva atras del programa y ejecute en la terminal bash install.sh")
 
+     if d == "3":
+         print("version 2.0 by RIP-Network")
+    
 
-     elif d == "2":
+     elif d == "4":
         print("Mi numero , no es oficial +506 6087 1177")
         time.sleep(8)
-    
+
+      
      elif d == "99":
          break
 
      input("Presiona enter para volver como antes")
      os.system('clear')
 menu()
-
-
-
