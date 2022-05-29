@@ -36,7 +36,7 @@ banner = Fore.RED + """…………..$……………………………………
 
 print(banner)
 print(Fore.GREEN + "              RIP-Network")
-print("                 V2.0")
+print("                 V2.5")
 time.sleep(3)
 os.system('clear')
 
@@ -66,7 +66,8 @@ def menu():
         webbrowser.open('https://mail.yandex.com/')
         time.sleep(2)
         webbrowser.open('https://web.telegram.org/k/')
-
+        print("Coloque el número de la víctima en los lugares donde le pone que ponga el número y listo")
+        time.sleep(8)
 
      if d == "2":
         print("Vuelva atras del programa y ejecute en la terminal bash install.sh")
@@ -76,7 +77,7 @@ def menu():
     
 
      elif d == "4":
-        print("Mi numero , no es oficial +506 6087 1177")
+        print("Aún no disponible pero en mi canal de YouTube puedes comentar")
         time.sleep(8)
 
       
