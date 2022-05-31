@@ -9,10 +9,12 @@ dependencias() {
         pip install sys
         pip install os
         pip install webbrowser
+        pip install selenium
         pip install platform
         pip install subprocess
         pip install time
         pip install colorama
+         printf "\e[1;93mDependencias Instaladas\e[0m\n"
 
 
 }
