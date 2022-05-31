@@ -4,6 +4,18 @@ import sys, os, webbrowser, platform, subprocess, time
 from colorama import Fore
 from importlib_metadata import version
 
+#colores
+negro = '\033[30m'
+rojo = '\033[31m'
+verde = '\033[32m'
+amarillo = '\033[33m'
+azul = '\033[34m'
+rosado = '\033[35m'
+calipso= '\033[36m'
+blanco = '\033[37m'
+cierre = '\033[39m'
+
+#Banner 
 
 banner = Fore.RED + """…………..$……………………………………..$…………..
 …………$$……………………………………..$$…………
@@ -36,18 +48,19 @@ banner = Fore.RED + """…………..$……………………………………
 
 print(banner)
 print(Fore.GREEN + "              RIP-Network")
-print("                 V2.5")
+print("                 V3.0")
 time.sleep(3)
 os.system('clear')
 
 
 def menu():
     while True:
-     print(Fore.GREEN + "Opciones\n")
-     print("1) Spam-SMS")
-     print("2) Instalar requisitos")
+     print(Fore.GREEN + "Opciones\n")        
+     print("1) Spam-SMS                             RIP-Network                             ")                    
+     print("2) Instalar requisitos                  Version 3.0                                     ")
      print("3) Version ")
      print("4) Comunicarte conmigo")
+     print("5) Como usar ")
      print("99)Salir")
 
      d = input(Fore.LIGHTBLUE_EX + "Elige una opcion --> ")
@@ -66,19 +79,27 @@ def menu():
         webbrowser.open('https://mail.yandex.com/')
         time.sleep(2)
         webbrowser.open('https://web.telegram.org/k/')
-        print("Coloque el número de la víctima en los lugares donde le pone que ponga el número y listo")
-        time.sleep(8)
+        time.sleep
+        webbrowser.open('https://www.tiktok.com/signup/phone-or-email?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fupload%3Flang%3Des&lang=es')
+        time.sleep(2)
+        webbrowser.open('https://ssl.zc.qq.com/v3/index-en.html')
+        time.sleep(2)
+        webbrowser.open('https://accounts.google.com/signup/v2/webgradsidvverify?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=SignUp&TL=AM3QAYa48CweUwImQCw_3Elte75AVCrYB6qeOJD4bRLxRrQfDjza1njxfXURCntM')
 
      if d == "2":
         print("Vuelva atras del programa y ejecute en la terminal bash install.sh")
 
      if d == "3":
-         print("version 2.0 by RIP-Network")
+         print("version 3.0 by RIP-Network")
     
 
      elif d == "4":
-        print("Aún no disponible pero en mi canal de YouTube puedes comentar")
+        print("No disponible actualmente pero me puedes seguir en Youtube ;)")
         time.sleep(8)
+
+
+     elif d == "5":
+        print(rojo+"Cuando se habran las paginas deveras poner el numero de la victima en las casillas que te ponga el numero , esta herramienta es muy simple pero la estare actualizando en poco tiempo , gracias por usarla y espero le des una estrella en mi github y te suscribas a mi canal :)"+cierre)
 
       
      elif d == "99":
